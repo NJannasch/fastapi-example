@@ -4,4 +4,4 @@ FastApi Example
 ## Description
 This project shows some basic functionality for backend / frontend interaction.
 
-&& add something more 
+![docs/frontendbackend.drawio.png]()

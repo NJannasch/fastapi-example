@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+    function showAlert() {
+        alert ("Hello world!");
+      }
+      
+      function UserAction() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                  alert(this.responseText);
+              }
+          };
+          xhttp.open("GET", "http://127.0.0.1:8000/users", true);
+          xhttp.send();
+          alert(xhttp.responseText);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <h3>This is my very first page</h3>
+    <button onclick="UserAction()">Click Me!</button>
+  </body>
+</html>
